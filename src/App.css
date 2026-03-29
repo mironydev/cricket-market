@@ -1,0 +1,13 @@
+.navbar-lists-style {
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: 0.1s ease all;
+}
+
+.navbar-lists-style:hover {
+  background: #ebebeb;
+}
+
+.navbar-lists-style:active {
+  background: #f3f3f3;
+}
