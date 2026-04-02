@@ -3,7 +3,7 @@ import coinImage from '../../assets/coin.png'
 import logo from '../../assets/logo.png'
 import '../../App.css'
 
-const Navbar = () => {
+const Navbar = ({balance}) => {
   return (
     <div className='w-11/12 mx-auto select-none'>
       <div className="mt-5 flex flex-col md:flex-row justify-between gap-10">
@@ -34,7 +34,7 @@ const Navbar = () => {
             <li><a className='navbar-lists-style' href="/">Schedules</a></li>
           </ul>
           <button className="btn flex items-center gap-2 justify-between font-bold">
-            0 Coin
+            {balance} BTC
             <img src={coinImage} alt="" width={18} />
           </button>
         </div>
