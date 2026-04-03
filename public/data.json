@@ -8,7 +8,7 @@
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm medium",
     "price": 17.83,
-    "playerImage": "../src/assets/players/1.png"
+    "playerImage": "/players/1.png" 
   },
 
   {
@@ -20,7 +20,7 @@
     "battingStyle": "Left-hand bat",
     "bowlingStyle": "Right-arm fast-medium",
     "price": 17.08,
-    "playerImage": "../src/assets/players/3.png"
+    "playerImage": "/players/3.png"
   },
   {
     "id": 3,
@@ -31,7 +31,7 @@
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm offbreak",
     "price": 18,
-    "playerImage": "../src/assets/players/4.png"
+    "playerImage": "/players/4.png"
   },
   {
     "id": 4,
@@ -42,7 +42,7 @@
     "battingStyle": "Left-hand bat",
     "bowlingStyle": "Left-arm orthodox",
     "price": 15.62,
-    "playerImage": "../src/assets/players/5.png"
+    "playerImage": "/players/5.png"
   },
   {
     "id": 5,
@@ -53,7 +53,7 @@
     "battingStyle": "Left-hand bat",
     "bowlingStyle": "Left-arm fast",
     "price": 19.72,
-    "playerImage": "../src/assets/players/6.png"
+    "playerImage": "/players/6.png"
   },
   {
     "id": 6,
@@ -64,7 +64,7 @@
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "None",
     "price": 15.2,
-    "playerImage": "../src/assets/players/7.png"
+    "playerImage": "/players/7.png"
   },
   {
     "id": 7,
@@ -75,7 +75,7 @@
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm legbreak",
     "price": 22.61,
-    "playerImage": "../src/assets/players/8.png"
+    "playerImage": "/players/8.png"
   },
   {
     "id": 8,
@@ -86,7 +86,7 @@
     "battingStyle": "Left-hand bat",
     "bowlingStyle": "Right-arm legbreak",
     "price": 21,
-    "playerImage": "../src/assets/players/9.png"
+    "playerImage": "/players/9.png"
   },
   {
     "id": 9,
@@ -97,6 +97,6 @@
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Left-arm fast-medium",
     "price": 17.94,
-    "playerImage": "../src/assets/players/10.png"
+    "playerImage": "/players/10.png"
   }
 ]

@@ -101,9 +101,9 @@ const Footer = () => {
             </p>
             <div className="join">
               <div>
-                <label className="input validator join-item">
+                <label className="input validator join-item focus-within:border-[#626262] outline-0 duration-100">
                   <svg
-                    className="h-[1em] opacity-50"
+                    className="text-black h-[1em] opacity-50"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                   >
@@ -118,7 +118,12 @@ const Footer = () => {
                       <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
                     </g>
                   </svg>
-                  <input type="email" placeholder="Enter your email" required />
+                  <input
+                    type="email"
+                    placeholder="Enter your email"
+                    required
+                    className="text-black"
+                  />
                 </label>
                 <div className="validator-hint hidden">
                   Enter valid email address

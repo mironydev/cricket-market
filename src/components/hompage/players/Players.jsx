@@ -15,7 +15,7 @@ const Players = ({ playersPromise, balance, setBalance }) => {
 
   return (
     <div className="w-11/12 mx-auto pb-60">
-      <div className="flex justify-between mt-15 mb-10">
+      <div className="flex flex-col md:flex-row items-center justify-between mt-15 mb-10 gap-4">
         <p className="text-3xl font-bold">
           {active === "available"
             ? `Available Players (${playersData.length})`
