@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import footeIMG from "../../assets/logo-footer.png";
 import bannerBG from "../../assets/bg-shadow.png";
 
 const Footer = () => {
+  const [email, setEmail] = useState("");
+
   return (
     <div className=" relative bg-[#06091A] text-white pt-60">
       <div
@@ -43,7 +45,7 @@ const Footer = () => {
           <div>
             <div className="join">
               <div>
-                <label className="input validator join-item">
+                <label className="input join-item focus-within:border-stone-800 outline-0 duration-100">
                   <svg
                     className="h-[1em] opacity-50"
                     xmlns="http://www.w3.org/2000/svg"
@@ -60,13 +62,18 @@ const Footer = () => {
                       <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
                     </g>
                   </svg>
-                  <input type="email" placeholder="Enter your email" required />
+                  <input
+                    type="email"
+                    placeholder="Enter your email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                  />
                 </label>
-                <div className="validator-hint hidden">
-                  Enter valid email address
-                </div>
               </div>
-              <button className="btn btn-success text-white join-item">
+              <button
+                className="btn btn-success text-white join-item"
+                onClick={() => setEmail("")}
+              >
                 Subscribe
               </button>
             </div>
@@ -87,11 +94,19 @@ const Footer = () => {
           </div>
           <div className="space-y-3 list-disc flex-1 flex flex-col items-center">
             <h3 className="font-semibold text-xl">Quick Links</h3>
-            <ul className="opacity-60 space-y-3 list-disc">
-              <li>Home</li>
-              <li>Services</li>
-              <li>About</li>
-              <li>Contact</li>
+            <ul className="space-y-3 list-disc">
+              <li className="opacity-60 hover:opacity-100">
+                <a href="/">Home</a>
+              </li>
+              <li className="opacity-60 hover:opacity-100">
+                <a href="/">Services</a>
+              </li>
+              <li className="opacity-60 hover:opacity-100">
+                <a href="/">About</a>
+              </li>
+              <li className="opacity-60 hover:opacity-100">
+                <a href="/">Contact</a>
+              </li>
             </ul>
           </div>
           <div className="space-y-3 flex-1 text-center md:text-left">
@@ -101,7 +116,7 @@ const Footer = () => {
             </p>
             <div className="join">
               <div>
-                <label className="input validator join-item focus-within:border-[#626262] outline-0 duration-100">
+                <label className="input join-item focus-within:border-[#626262] outline-0 duration-100">
                   <svg
                     className="text-black h-[1em] opacity-50"
                     xmlns="http://www.w3.org/2000/svg"
@@ -123,13 +138,17 @@ const Footer = () => {
                     placeholder="Enter your email"
                     required
                     className="text-black"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                   />
                 </label>
-                <div className="validator-hint hidden">
-                  Enter valid email address
-                </div>
               </div>
-              <button className="btn btn-success join-item">Subscribe</button>
+              <button
+                className="btn btn-success join-item"
+                onClick={() => setEmail("")}
+              >
+                Subscribe
+              </button>
             </div>
           </div>
         </div>

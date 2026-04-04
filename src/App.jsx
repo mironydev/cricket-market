@@ -14,14 +14,18 @@ const fetchPlayer = async () => {
 const playersPromise = fetchPlayer();
 
 function App() {
-  const [balance, setBalance] = useState(10000);
+  const [balance, setBalance] = useState(150);
 
   return (
     <div>
       <Navbar balance={balance}></Navbar>
       <Banner></Banner>
       <Suspense
-        fallback={<span className="loading loading-spinner loading-xl"></span>}
+        fallback={
+          <div className="flex items-center justify-center min-h-screen">
+            <span className="loading loading-spinner loading-xl"></span>
+          </div>
+        }
       >
         <Players
           playersPromise={playersPromise}
