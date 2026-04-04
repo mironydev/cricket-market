@@ -7,8 +7,8 @@ const Navbar = ({ balance }) => {
   return (
     <div className="shadow py-3">
       <div className="w-11/12 mx-auto select-none">
-        <div className=" flex flex-col md:flex-row justify-between gap-5">
-          <div className="flex items-center w-full lg:w-fit">
+        <div className=" flex flex-row justify-between gap-5">
+          <div className="flex items-center md:w-full lg:w-fit">
             <div className="dropdown">
               <div
                 tabIndex={0}
@@ -50,8 +50,10 @@ const Navbar = ({ balance }) => {
               </ul>
             </div>
             <a href="/" className="flex items-center gap-2 mx-auto">
-              <img src={logo} alt="" width={60} />
-              <p className="font-bold text-2xl text-[#162674]">CricketMarket</p>
+              <img src={logo} alt="" width={40} className="hidden md:block" />
+              <p className="font-bold text-xl md:text-2xl text-[#162674] ml-2 md:ml-0">
+                CricketMarket
+              </p>
             </a>
           </div>
           <div className="flex gap-10 justify-center items-center">
@@ -77,7 +79,7 @@ const Navbar = ({ balance }) => {
                 </a>
               </li>
             </ul>
-            <button className="btn flex items-center gap-2 justify-between font-bold">
+            <button className="btn flex items-center gap-2 justify-between font-bold px-2 md:px-4">
               {balance} BTC
               <img src={coinImage} alt="" width={18} />
             </button>
